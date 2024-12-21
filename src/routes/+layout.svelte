@@ -1,5 +1,5 @@
 <svelte:head>
-  <script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
 </svelte:head>
 
 <nav>
@@ -17,7 +17,7 @@
 		top: 0;
 		width: 100%;
 		background: white;
-		box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+		box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 	}
 
 	a {
