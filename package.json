@@ -1,0 +1,30 @@
+{
+	"name": "kit-template-default",
+	"version": "0.0.1",
+	"scripts": {
+		"bun-upgrade": "bun upgrade",
+		"ncu": "ncu",
+		"ncu-upgrade": "ncu -u && bun install",
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"lint": "prettier --check .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@fontsource/fira-mono": "^5.1.0",
+		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/kit": "^2.13.0",
+		"@sveltejs/vite-plugin-svelte": "^5.0.3",
+		"marked": "^15.0.4",
+		"prettier": "^3.4.2",
+		"prettier-plugin-svelte": "^3.3.2",
+		"svelte": "^5.15.0",
+		"svelte-check": "^4.1.1",
+		"typescript": "^5.7.2",
+		"vite": "^6.0.5"
+	},
+	"type": "module"
+}
