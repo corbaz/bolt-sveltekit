@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { marked } from 'marked';
+	// @ts-ignore
+	import { Marked } from 'marked';
 	import { writable } from 'svelte/store';
-	import enContent from './content/en.md?raw';
-	import esContent from './content/es.md?raw';
+	import enContent from '@content/en.md?raw';
+	import esContent from '@content/es.md?raw';
 
 	const language = writable<'en' | 'es'>('en');
 	const content = {
@@ -10,7 +11,9 @@
 		es: esContent
 	};
 
+	const marked = new Marked();
 	$: currentContent = $language === 'en' ? content.en : content.es;
+	$: htmlContent = marked.parse(currentContent);
 </script>
 
 <svelte:head>
@@ -44,7 +47,7 @@
 	<div class="flex-1 overflow-y-auto pt-20 px-4 pb-8" style="background-color: #fafafa;">
 		<div class="container mx-auto">
 			<article class="prose prose-slate max-w-none bg-white p-8 rounded-lg shadow-sm">
-				{@html marked(currentContent)}
+				{@html htmlContent}
 			</article>
 		</div>
 	</div>

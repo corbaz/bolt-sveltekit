@@ -3,7 +3,7 @@
 </svelte:head>
 
 <nav>
-	<a class="text-blue-800" href="/">Home Inicial</a>
+	<a class="text-blue-800" href="/">Home</a>
 	<a class="text-green-800" href="/about">About</a>
 	<a class="text-purple-800" href="/info">Info</a>
 </nav>

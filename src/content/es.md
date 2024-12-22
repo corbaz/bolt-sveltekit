@@ -1,4 +1,4 @@
-# Guía de Estructura del Proyecto SvelteKit
+# Guía de un Proyecto SvelteKit
 
 ## Explicación de Archivos Principales
 
