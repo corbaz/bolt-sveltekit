@@ -1,4 +1,4 @@
-# SvelteKit Project Structure Guide
+# SvelteKit - Project Structure Guide
 
 ## Core Files Explanation
 

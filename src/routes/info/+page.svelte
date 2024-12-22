@@ -5,6 +5,8 @@
 	import enContent from '@content/en.md?raw';
 	import esContent from '@content/es.md?raw';
 
+	export const prerender = true;
+
 	const language = writable<'en' | 'es'>('en');
 	const content = {
 		en: enContent,
